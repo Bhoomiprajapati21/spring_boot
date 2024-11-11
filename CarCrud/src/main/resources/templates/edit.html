@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="/cars/edit" method="post">
+<input type="hidden" name="id" th:value="${car.id}">
+<p>Brand : <input type="text" name="brand" th:value="${car.brand}"></p>
+<p>Model : <input type="text" name="model1" th:value="${car.model1}"></p>
+<p>Price : <input type="text" name="price" th:value="${car.price}"></p>
+<button type="submit">Edit Car</button>
+</form>
+</body>
+</html>
